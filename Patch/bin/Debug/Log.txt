@@ -1,0 +1,6 @@
+Data: 2015-12-22 16:06:35
+Odmowa dostępu do ścieżki „F:\System Volume Information”.
+
+Data: 2015-12-25 19:53:20
+Object reference not set to an instance of an object.
+

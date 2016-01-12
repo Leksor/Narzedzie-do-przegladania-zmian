@@ -1,0 +1,6 @@
+h3{ text-align: center; }
+p { 
+text-align: justify; 
+orphans: 4;
+}
+p.role { font-weight: bold; }

@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="Patch.Views.Help.HelpView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Patch.Views.Help"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="700">
+    <Grid>
+        <!-- Columns definition -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.Resources>
+            <Style x:Key="HeaderStyle" TargetType="TextBlock">
+                <Setter Property="FontFamily" Value="Algerian"/>
+                <Setter Property="Foreground" Value="#FF0097FF" />
+                <Setter Property="FontSize" Value="70" />
+            </Style>
+        </Grid.Resources>
+
+        <!-- Buttons definition -->
+        <Button Background="LightBlue" Grid.Column="0" Grid.RowSpan="2"
+                Command="{Binding ShowGeneratePatchCommand}" 
+                Content="Generowanie łatki" 
+                Margin="25,20,0,0" Height="30" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Width="150"/>
+
+        <Button Background="LightBlue" Grid.Column="0" Grid.RowSpan="2"
+                Command="{Binding ShowLayPatchCommand}" 
+                Content="Nakładanie Łatki" 
+                Margin="25,70,0,0" Height="30" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Width="150"/>
+
+        <Button Background="LightBlue" Grid.Column="0" Grid.RowSpan="2"
+                Command="{Binding ShowShareHelpCommand}" 
+                Content="Cofanie zmian" 
+                Margin="25,120,0,0" Height="30" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Width="150"/>
+
+        <TextBlock Style="{StaticResource HeaderStyle}" Grid.Column="1" Grid.Row="0" Text="POMOC" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <WebBrowser Name="WebBrowser" Grid.Column="1" HorizontalAlignment="Left" Height="Auto" Grid.Row="1" VerticalAlignment="Top" Width="Auto" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,20 @@
+﻿Patch
+
+
+winexe
+C#
+.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\
+Patch
+none
+false
+DEBUG;TRACE
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\App.xaml
+14-1595986203
+
+41-564856621
+16-2142630721
+Animations\CircularProgressBar.xaml;MainWindow.xaml;Views\Help\HelpView.xaml;Views\Patch\GeneratePatchFolderView.xaml;Views\Patch\GeneratePatchView.xaml;Views\Patch\LayPatchFolderView.xaml;Views\Patch\LayPatchView.xaml;Views\Patch\RollbackChangesFolderView.xaml;Views\Patch\RollbackChangesView.xaml;Views\PreviewFile.xaml;Views\PreviewFiles.xaml;Views\PreviewFolder.xaml;Views\PreviewTreeFolder.xaml;Views\Settings\SettingsView.xaml;
+
+False
+

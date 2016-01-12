@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="Patch.Views.Settings.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Patch.Views.Settings"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+        
+        <!-- Compate files options -->
+        <Grid Grid.Row="0">
+            <GroupBox Header="Opcje porównywania plików">
+                
+            </GroupBox>
+        </Grid>
+        
+        <!-- Visual settings for display files change -->
+        <Grid Grid.Row="1">
+            <GroupBox Header="Opcje wizualne">
+
+            </GroupBox>
+        </Grid>
+    </Grid>
+</UserControl>

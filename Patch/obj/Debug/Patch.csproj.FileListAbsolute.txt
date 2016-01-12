@@ -1,0 +1,138 @@
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\bin\Debug\Patch.exe.config
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Patch.exe
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Patch.pdb
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\bin\Debug\Patch.exe
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\bin\Debug\Patch.pdb
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\bin\Debug\MahApps.Metro.dll
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\bin\Debug\MahApps.Metro.xml
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Patch.csprojResolveAssemblyReference.cache
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Animations\CircularProgressBar.baml
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Animations\CircularProgressBar.g.cs
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\MainWindow.g.cs
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Views\Help\HelpView.g.cs
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Views\Patch\GeneratePatchFolderView.g.cs
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Views\Patch\GeneratePatchView.g.cs
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Views\Patch\LayPatchView.g.cs
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Views\PreviewFile.g.cs
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Views\PreviewFiles.g.cs
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Views\Settings\SettingsView.g.cs
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\App.g.cs
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Patch_MarkupCompile.cache
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Patch_MarkupCompile.lref
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\App.baml
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\MainWindow.baml
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Views\Help\HelpView.baml
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Views\Patch\GeneratePatchFolderView.baml
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Views\Patch\GeneratePatchView.baml
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Views\Patch\LayPatchView.baml
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Views\PreviewFile.baml
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Views\PreviewFiles.baml
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Views\Settings\SettingsView.baml
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Patch.g.resources
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Patch.Properties.Resources.resources
+C:\Users\Majkel\documents\visual studio 2015\Projects\Patch\Patch\obj\Debug\Patch.csproj.GenerateResource.Cache
+F:\Inżynierka\Patch\Patch\obj\Debug\Patch.csprojResolveAssemblyReference.cache
+F:\Inżynierka\Patch\Patch\obj\Debug\Animations\CircularProgressBar.baml
+F:\Inżynierka\Patch\Patch\obj\Debug\Views\PreviewFolder.baml
+F:\Inżynierka\Patch\Patch\obj\Debug\Animations\CircularProgressBar.g.cs
+F:\Inżynierka\Patch\Patch\obj\Debug\MainWindow.g.cs
+F:\Inżynierka\Patch\Patch\obj\Debug\Views\Help\HelpView.g.cs
+F:\Inżynierka\Patch\Patch\obj\Debug\Views\Patch\GeneratePatchFolderView.g.cs
+F:\Inżynierka\Patch\Patch\obj\Debug\Views\Patch\GeneratePatchView.g.cs
+F:\Inżynierka\Patch\Patch\obj\Debug\Views\Patch\LayPatchFolderView.g.cs
+F:\Inżynierka\Patch\Patch\obj\Debug\Views\Patch\LayPatchView.g.cs
+F:\Inżynierka\Patch\Patch\obj\Debug\Views\PreviewFile.g.cs
+F:\Inżynierka\Patch\Patch\obj\Debug\Views\PreviewFiles.g.cs
+F:\Inżynierka\Patch\Patch\obj\Debug\Views\PreviewFolder.g.cs
+F:\Inżynierka\Patch\Patch\obj\Debug\Views\Settings\SettingsView.g.cs
+F:\Inżynierka\Patch\Patch\obj\Debug\App.g.cs
+F:\Inżynierka\Patch\Patch\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Inżynierka\Patch\Patch\obj\Debug\Patch_MarkupCompile.cache
+F:\Inżynierka\Patch\Patch\obj\Debug\Patch_MarkupCompile.lref
+F:\Inżynierka\Patch\Patch\bin\Debug\Patch.exe.config
+H:\Inżynierka\Patch\Patch\bin\Debug\Patch.exe.config
+H:\Inżynierka\Patch\Patch\obj\Debug\Patch.csprojResolveAssemblyReference.cache
+H:\Inżynierka\Patch\Patch\obj\Debug\Animations\CircularProgressBar.baml
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\PreviewFolder.baml
+H:\Inżynierka\Patch\Patch\obj\Debug\Animations\CircularProgressBar.g.cs
+H:\Inżynierka\Patch\Patch\obj\Debug\MainWindow.g.cs
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\Help\HelpView.g.cs
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\Patch\GeneratePatchFolderView.g.cs
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\Patch\GeneratePatchView.g.cs
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\Patch\LayPatchFolderView.g.cs
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\Patch\LayPatchView.g.cs
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\PreviewFile.g.cs
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\PreviewFiles.g.cs
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\PreviewFolder.g.cs
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\Settings\SettingsView.g.cs
+H:\Inżynierka\Patch\Patch\obj\Debug\App.g.cs
+H:\Inżynierka\Patch\Patch\obj\Debug\GeneratedInternalTypeHelper.g.cs
+H:\Inżynierka\Patch\Patch\obj\Debug\Patch_MarkupCompile.cache
+H:\Inżynierka\Patch\Patch\obj\Debug\Patch_MarkupCompile.lref
+H:\Inżynierka\Patch\Patch\bin\Debug\Patch.exe
+H:\Inżynierka\Patch\Patch\bin\Debug\Patch.pdb
+H:\Inżynierka\Patch\Patch\bin\Debug\MahApps.Metro.dll
+H:\Inżynierka\Patch\Patch\bin\Debug\System.Windows.Interactivity.dll
+H:\Inżynierka\Patch\Patch\bin\Debug\MahApps.Metro.xml
+H:\Inżynierka\Patch\Patch\obj\Debug\App.baml
+H:\Inżynierka\Patch\Patch\obj\Debug\MainWindow.baml
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\Help\HelpView.baml
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\Patch\GeneratePatchFolderView.baml
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\Patch\GeneratePatchView.baml
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\Patch\LayPatchFolderView.baml
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\Patch\LayPatchView.baml
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\PreviewFile.baml
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\PreviewFiles.baml
+H:\Inżynierka\Patch\Patch\obj\Debug\Views\Settings\SettingsView.baml
+H:\Inżynierka\Patch\Patch\obj\Debug\Patch.g.resources
+H:\Inżynierka\Patch\Patch\obj\Debug\Patch.Properties.Resources.resources
+H:\Inżynierka\Patch\Patch\obj\Debug\Patch.csproj.GenerateResource.Cache
+H:\Inżynierka\Patch\Patch\obj\Debug\Patch.exe
+H:\Inżynierka\Patch\Patch\obj\Debug\Patch.pdb
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\bin\Debug\Patch.exe.config
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Patch.exe
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Patch.pdb
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\bin\Debug\Patch.exe
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\bin\Debug\Patch.pdb
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\bin\Debug\MahApps.Metro.dll
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\bin\Debug\MahApps.Metro.xml
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Animations\CircularProgressBar.baml
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\PreviewFolder.baml
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Animations\CircularProgressBar.g.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\MainWindow.g.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\Help\HelpView.g.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\Patch\GeneratePatchFolderView.g.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\Patch\GeneratePatchView.g.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\Patch\LayPatchFolderView.g.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\Patch\LayPatchView.g.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\PreviewFile.g.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\PreviewFiles.g.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\PreviewFolder.g.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\Settings\SettingsView.g.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\App.g.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Patch_MarkupCompile.cache
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Patch_MarkupCompile.lref
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\App.baml
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\MainWindow.baml
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\Help\HelpView.baml
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\Patch\GeneratePatchFolderView.baml
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\Patch\GeneratePatchView.baml
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\Patch\LayPatchFolderView.baml
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\Patch\LayPatchView.baml
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\PreviewFile.baml
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\PreviewFiles.baml
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\Settings\SettingsView.baml
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Patch.g.resources
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Patch.Properties.Resources.resources
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Patch.csproj.GenerateResource.Cache
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\PreviewTreeFolder.g.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\PreviewTreeFolder.baml
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\Patch\RollbackChangesView.g.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\Patch\RollbackChangesView.baml
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Patch.csprojResolveAssemblyReference.cache
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\Patch\RollbackChangesFolderView.g.cs
+C:\Users\Majkel\Documents\Visual Studio 2015\Patch\Patch\obj\Debug\Views\Patch\RollbackChangesFolderView.baml

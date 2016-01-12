@@ -1,0 +1,39 @@
+﻿<Controls:MetroWindow x:Class="Patch.Views.PreviewFile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:Patch.Views"
+        mc:Ignorable="d"
+        Title="Podgląd pliku" MinHeight="300" MinWidth="300">
+    <Grid>
+        
+        <!-- Rows Definition -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="15*" />
+        </Grid.RowDefinitions>
+        
+        <!-- Title -->
+        <Label Name="Title" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <!-- Rendered lines number and text file section -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="14*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Lines numbers -->
+            <RichTextBox x:Name="richTextBoxNumbers" Grid.Row="1" Grid.Column="0" BorderBrush="Silver" Background="Silver" IsReadOnly="True" 
+                         ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.ScrollChanged="RichTextBox_ScrollChanged" />
+
+
+            <!-- File lines -->
+            <RichTextBox x:Name="richTextBoxLines" Grid.Row="1" Grid.Column="1" IsReadOnly="True" IsReadOnlyCaretVisible="True" ScrollViewer.VerticalScrollBarVisibility="Auto"
+                         ScrollViewer.ScrollChanged="RichTextBox_ScrollChanged" />
+
+        </Grid>
+    </Grid>
+</Controls:MetroWindow>

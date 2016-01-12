@@ -1,0 +1,253 @@
+﻿<UserControl x:Class="Patch.Views.Patch.GeneratePatchFolderView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:animation="clr-namespace:Patch.Animations"
+             xmlns:local="clr-namespace:Patch.Views.Patch"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="700">
+    <Grid>
+        <Grid.Resources>
+
+            <!-- Converters -->
+            <BooleanToVisibilityConverter x:Key="BoolToVis" />
+
+            <!-- Styles -->
+            <Style x:Key="HeaderStyle" TargetType="TextBlock">
+                <Setter Property="FontFamily" Value="Times New Roman"/>
+                <Setter Property="Foreground" Value="#FF0097FF" />
+                <Setter Property="FontSize" Value="40" />
+            </Style>
+        </Grid.Resources>
+
+        <!-- Rows definition -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <TextBlock Style="{StaticResource HeaderStyle}" Grid.Row="0" Text="Generuj Łatkę" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        <!-- First loading file grid -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Buttons area -->
+            <Grid Grid.Column="0">
+                <!-- Rows definition -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!-- Buttons -->
+                <!-- Load file button -->
+                <Button Background="LightBlue" Command="{Binding LoadFirstFolderCommand}" Grid.Column="0" Grid.Row="0"
+                        IsEnabled="{Binding Path=IsGeneratePatchButtonEnable, UpdateSourceTrigger=PropertyChanged}"
+                        Content="Wczytaj folder" Height="33" HorizontalAlignment="Center" Cursor="Hand"
+                        Name="ChooseSecondFile" VerticalAlignment="Center" Width="120" />
+
+                <!-- Reset file button -->
+                <Button Background="LightBlue" Command="{Binding ResetFirstFolderCommand}" Grid.Column="0" Grid.Row="1"
+                        IsEnabled="{Binding Path=IsGeneratePatchButtonEnable, UpdateSourceTrigger=PropertyChanged}"
+                        Visibility="{Binding Path=IsFirstFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                        Content="Resetuj folder" Height="33" HorizontalAlignment="Center" Cursor="Hand"
+                        VerticalAlignment="Center" Width="120" />
+
+                <!-- Preview file button -->
+                <Button Background="LightBlue" Grid.Column="0" Grid.Row="2" Cursor="Hand"
+                        Command="{Binding PreviewFirstFolderCommand}" 
+                        IsEnabled="{Binding Path=IsGeneratePatchButtonEnable, UpdateSourceTrigger=PropertyChanged}"
+                        Visibility="{Binding Path=IsFirstFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                        Content="Podejrzyj Pliki" Height="30" 
+                        HorizontalAlignment="Center" VerticalAlignment="Center" 
+                        Width="120"/>
+            </Grid>
+
+            <!-- File Image -->
+            <Image Grid.Column="1" Source="/Patch;component/Images/folder.png" 
+                   Visibility="{Binding Path=IsFirstFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"/>
+
+
+            <Grid Name="FirstStack" Grid.Column="2" >
+
+                <!-- Rows definition -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!-- Columns definition -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="5*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Folder Name -->
+                <Label Visibility="{Binding Path=IsFirstFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+                       Grid.Row="0" Grid.Column="0" Content="Nazwa:" VerticalAlignment="Center" />
+                <Label Visibility="{Binding Path=IsFirstFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+                       Grid.Row="0" Grid.Column="1" Content="{Binding Path=FirstFolderInfo.Name}" VerticalAlignment="Center" />
+
+                <!-- File Size -->
+                <Label Visibility="{Binding Path=IsFirstFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+                       Grid.Row="1" Grid.Column="0" Content="Ścieżka:" VerticalAlignment="Center" />
+                <Label Visibility="{Binding Path=IsFirstFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+                       Grid.Row="1" Grid.Column="1" Content="{Binding Path=FirstFolderInfo.FullName}" VerticalAlignment="Center" />
+
+                <!-- File Creation Date -->
+                <Label Visibility="{Binding Path=IsFirstFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+                       Grid.Row="2" Grid.Column="0" Content="Data utworzenia:" VerticalAlignment="Center" />
+                <Label Visibility="{Binding Path=IsFirstFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+                       Grid.Row="2" Grid.Column="1" Content="{Binding Path=FirstFolderInfo.CreationTime}" VerticalAlignment="Center" />
+
+            </Grid>
+        </Grid>
+
+        <!-- Second loading file grid -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Buttons area -->
+            <Grid Grid.Column="0">
+                <!-- Rows definition -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!-- Buttons -->
+                <!-- Load file button -->
+                <Button Background="LightBlue" Command="{Binding LoadSecondFolderCommand}" Grid.Column="0"
+                        IsEnabled="{Binding Path=IsGeneratePatchButtonEnable, UpdateSourceTrigger=PropertyChanged}"
+                        Content="Wczytaj folder" Height="33" HorizontalAlignment="Center" Cursor="Hand"
+                        Name="ChooseFirstFile" VerticalAlignment="Center" Width="120" />
+
+                <!-- Reset file button -->
+                <Button Background="LightBlue" Command="{Binding ResetSecondFolderCommand}" Grid.Column="0" Grid.Row="1"
+                        IsEnabled="{Binding Path=IsGeneratePatchButtonEnable, UpdateSourceTrigger=PropertyChanged}"
+                        Visibility="{Binding Path=IsSecondFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                        Content="Resetuj folder" Height="33" HorizontalAlignment="Center" Cursor="Hand"
+                        VerticalAlignment="Center" Width="120" />
+
+                <!-- Preview file button -->
+                <Button Background="LightBlue" Grid.Column="0" Grid.Row="2" Cursor="Hand"
+                        Command="{Binding PreviewSecondFolderCommand}" 
+                        IsEnabled="{Binding Path=IsGeneratePatchButtonEnable, UpdateSourceTrigger=PropertyChanged}"
+                        Visibility="{Binding Path=IsSecondFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                        Content="Podejrzyj Pliki" Height="30" 
+                        HorizontalAlignment="Center" VerticalAlignment="Center" 
+                        Width="120"/>
+
+            </Grid>
+
+            <!-- File Image -->
+            <Image Grid.Column="1" Source="/Patch;component/Images/folder.png" 
+                   Visibility="{Binding Path=IsSecondFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"/>
+
+            <Grid Name="SecondStack" Grid.Column="2" >
+                <!-- Rows definition -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!-- Columns definition -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="5*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- File Extension -->
+                <Label Visibility="{Binding Path=IsSecondFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+                       Grid.Row="0" Grid.Column="0" Content="Nazwa:" VerticalAlignment="Center" />
+                <Label Visibility="{Binding Path=IsSecondFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+                       Grid.Row="0" Grid.Column="1" Content="{Binding Path=SecondFolderInfo.Name}" VerticalAlignment="Center" />
+
+                <!-- File Size -->
+                <Label Visibility="{Binding Path=IsSecondFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+                       Grid.Row="1" Grid.Column="0" Content="Ścieżka:" VerticalAlignment="Center" />
+                <Label Visibility="{Binding Path=IsSecondFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+                       Grid.Row="1" Grid.Column="1" Content="{Binding Path=SecondFolderInfo.FullName}" VerticalAlignment="Center" />
+
+                <!-- File Creation Date -->
+                <Label Visibility="{Binding Path=IsSecondFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+                       Grid.Row="2" Grid.Column="0" Content="Data utworzenia:" VerticalAlignment="Center" />
+                <Label Visibility="{Binding Path=IsSecondFolderLoaded, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+                       Grid.Row="2" Grid.Column="1" Content="{Binding Path=SecondFolderInfo.CreationTime}" VerticalAlignment="Center" />
+
+            </Grid>
+        </Grid>
+
+        <!-- Generated patch area -->
+        <Grid Grid.Row="3" Margin="0, 20, 0, 0">
+
+            <!-- Columns definition -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Create patch button -->
+            <Button Background="LightBlue" Grid.Row="0" Grid.Column="0" Cursor="Hand"
+                        Command="{Binding GeneratePatchCommand}" 
+                        IsEnabled="{Binding Path=IsGeneratePatchButtonEnable, UpdateSourceTrigger=PropertyChanged}"
+                        Visibility="{Binding Path=IsGeneratePatchButtonVisible, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged}"
+                        Content="Generuj Łatkę" Height="30" 
+                        HorizontalAlignment="Center" VerticalAlignment="Center" 
+                        Width="120"/>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*" />
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+
+                <!-- Loading Animation -->
+                <animation:CircularProgressBar Grid.Row="0" Grid.Column="1" Visibility="{Binding Path=IsAnimationActive, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource BoolToVis}}"></animation:CircularProgressBar>
+                <Label Grid.Row="1" Grid.Column="1" Content="{Binding Path=GeneratePatchStatus}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!-- Preview Patch button -->
+                <Button Background="LightBlue" Grid.Row="0" Grid.Column="2" Cursor="Hand"
+                        Command="{Binding PreviewPatchCommand}" 
+                        Visibility="{Binding Path=IsDownPanelAvaiable, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                        Content="Podejrzyj Łatkę" Height="30" 
+                        HorizontalAlignment="Center" VerticalAlignment="Center" 
+                        Width="130"/>
+
+                <!-- Save button -->
+                <Button Background="LightBlue" Grid.Row="1" Grid.Column="2" Cursor="Hand"
+                        Command="{Binding SavePatchCommand}" 
+                        Visibility="{Binding Path=IsDownPanelAvaiable, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                        Content="Zapisz Łatkę" Height="30" 
+                        HorizontalAlignment="Center" VerticalAlignment="Center" 
+                        Width="130"/>
+
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

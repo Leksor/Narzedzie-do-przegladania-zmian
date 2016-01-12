@@ -1,0 +1,59 @@
+﻿<Controls:MetroWindow x:Class="Patch.Views.PreviewTreeFolder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:Patch.Views"
+        mc:Ignorable="d"
+        Title="Podgląd plików" Height="600" Width="500">
+    
+    <Grid>
+        <Grid.Resources>
+            <!-- Converters -->
+            <BooleanToVisibilityConverter x:Key="BoolToVis" />
+        </Grid.Resources>
+        <Border BorderBrush="Gray" BorderThickness="1" >
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <TreeView ItemsSource="{Binding TreeCollection}" >
+                    <TreeView.ItemContainerStyle>
+                        <Style TargetType="{x:Type TreeViewItem}">
+                            <Setter Property="IsExpanded" Value="True" />
+                        </Style>
+                    </TreeView.ItemContainerStyle>
+                    <TreeView.ItemTemplate>
+                        <HierarchicalDataTemplate ItemsSource="{Binding TreeCollection}">
+                            <Grid Margin="0, 5, 0, 5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Grid.Column="0" Text="{Binding Name}" VerticalAlignment="Center" Margin="0, 0, 20, 0" >
+                                    <TextBlock.Style>
+                                        <Style TargetType="{x:Type TextBlock}">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsChanged}" Value="True" >
+                                                    <Setter Property="Background" Value="#FFF74F" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                                
+                                <Button Grid.Column="1" Visibility="{Binding Path=IsFile, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+                                        Background="LightBlue" Cursor="Hand" Command="{Binding ShowFileCommand}" Content="Podejrzyj Plik" Height="25" 
+                                        HorizontalAlignment="Center" VerticalAlignment="Center" Width="100"/>
+
+                                <Button Margin="8, 0, 0, 0" Grid.Column="2" Visibility="{Binding Path=IsChanged, Converter={StaticResource BoolToVis}, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+                                        Background="LightBlue" Cursor="Hand" Command="{Binding ShowFileChanges}" Content="Podejrzyj Zmiany" Height="25" 
+                                        HorizontalAlignment="Center" VerticalAlignment="Center" Width="120"/>
+                            </Grid>
+                        </HierarchicalDataTemplate>
+                    </TreeView.ItemTemplate>
+                </TreeView>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</Controls:MetroWindow>
